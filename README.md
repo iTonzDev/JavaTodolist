@@ -7,7 +7,7 @@
 3. Go to url: localhost:8080
 
 ### API DOCS
-Get All Task List:
+Get All Task:
 
               Request → GET
               URL → '/'  or '/tasks'
@@ -36,7 +36,7 @@ Update Task:
                 "detail" : "Go to Chiang Mai", 
                 "pending" : "true" 
               }
-Update Status Pending:
+Update Status Task:
 
               Request → PUT
               URL → '/tasks/{id}'
