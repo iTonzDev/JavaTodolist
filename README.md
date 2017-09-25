@@ -1,11 +1,10 @@
-# JavaTodolist
+# JavaTodolist https://travis-ci.org/iTonzDev/JavaTodolist.svg?branch=master
 
 ### Setup Project
 1. ./gradlew clean
 2. ./gradlew test
-3. ./gradlew clean install
-4. ./gradlew spring-boot:run
-5. Go to url: localhost:8080
+3. ./gradlew bootRun
+4. Go to url: localhost:8080
 
 ### API DOCS
 Get all Task List:
