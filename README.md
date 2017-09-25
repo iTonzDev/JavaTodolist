@@ -1,13 +1,6 @@
 # JavaTodolist
 
-**Setup Project**
-1. ./gradlew clean
-2. ./gradlew test
-3. ./gradlew clean install
-4. ./gradlew spring-boot:run
-5. Go to url: localhost:8080
-
-**API**
+**API DOCS**
 
 Get all Task List:
 
@@ -37,3 +30,10 @@ Delete Task:
 
               Request → DELETE
               URL → '/tasks/{id}'
+
+**Setup Project**
+1. ./gradlew clean
+2. ./gradlew test
+3. ./gradlew clean install
+4. ./gradlew spring-boot:run
+5. Go to url: localhost:8080
