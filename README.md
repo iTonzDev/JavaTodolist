@@ -1,11 +1,10 @@
 # JavaTodolist
 [![Build Status](https://travis-ci.org/iTonzDev/JavaTodolist.svg?branch=master)](https://travis-ci.org/iTonzDev/JavaTodolist)
 
-### Setup Project
-1. ./gradlew clean
-2. ./gradlew test
-3. ./gradlew bootRun
-4. Go to url: localhost:8080
+### Build & Run
+1. ./gradlew clean test
+2. ./gradlew bootRun
+3. Go to url: localhost:8080
 
 ### API DOCS
 Get All Task List:
@@ -21,13 +20,22 @@ Create New Task:
               Request → POST
               URL → '/tasks'
               Header → Content-Type : application/json
-              Body → {"detail" : "task test", "pending" : "false" }
+              Body → 
+              {
+                "detail" : "Go to London",
+                "pending" : "true"
+              }
 Update Task:
 
               Request → PATCH
-              URL → '/tasks/'
+              URL → '/tasks'
               Header → Content-Type : application/json
-              Body → { id : 1 , "detail" : "update task test", "pending" : "false" }
+              Body → 
+              { 
+                id : 1 , 
+                "detail" : "Go to Chiang Mai", 
+                "pending" : "true" 
+              }
 Update Status Pending:
 
               Request → PUT
