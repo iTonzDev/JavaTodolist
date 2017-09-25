@@ -36,11 +36,10 @@ public class TaskServiceTest {
         List<Task> taskList = new ArrayList<Task>();
         taskList.add(new Task(1,"Learn Scala",true));
         taskList.add(new Task(2,"Learn GO",true));
-        taskList.add(new Task(3,"Learn React",true));
         when(taskRepository.findAll()).thenReturn(taskList);
 
         List<Task> result = taskService.getAllTask();
-        assertEquals(3, result.size());
+        assertEquals(2, result.size());
     }
 
     @Test
@@ -55,27 +54,27 @@ public class TaskServiceTest {
 
     @Test
     public void saveTask(){
-        Task task = new Task(4,"Learn Redis",true);
+        Task task = new Task(3,"Learn Redis",true);
         when(taskRepository.save(task)).thenReturn(task);
         Task result = taskService.saveTask(task);
-        assertEquals(4, result.getId());
+        assertEquals(3, result.getId());
         assertEquals("Learn Redis", result.getDetail());
         assertEquals(true, result.isPending());
     }
 
     @Test
     public void updatePending(){
-        Task task = new Task(4,"Learn Redis",true);
+        Task task = new Task(3,"Learn Redis",true);
         when(taskRepository.save(task)).thenReturn(task);
         Task result = taskService.updatePanding(task);
-        assertEquals(4, result.getId());
+        assertEquals(3, result.getId());
         assertEquals("Learn Redis", result.getDetail());
         assertEquals(false, result.isPending());
     }
 
     @Test
     public void removeTask(){
-        Task task = new Task(4,"Learning Redis",true);
+        Task task = new Task(3,"Learning Redis",true);
         taskService.removeTask(task);
         verify(taskRepository, times(1)).delete(task);
     }
