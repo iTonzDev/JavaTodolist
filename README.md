@@ -1,4 +1,5 @@
-# JavaTodolist https://travis-ci.org/iTonzDev/JavaTodolist.svg?branch=master
+# JavaTodolist
+[![Build Status](https://travis-ci.org/iTonzDev/JavaTodolist.svg?branch=master)](https://travis-ci.org/iTonzDev/JavaTodolist)
 
 ### Setup Project
 1. ./gradlew clean
