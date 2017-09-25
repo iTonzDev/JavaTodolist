@@ -8,15 +8,15 @@
 4. Go to url: localhost:8080
 
 ### API DOCS
-Get all Task List:
+Get All Task List:
 
               Request → GET
               URL → '/'  or '/tasks'
-Get one by Id:
+Get Task by Id:
 
               Request → GET
               URL → '/tasks/{id}'
-Create new Task:
+Create New Task:
 
               Request → POST
               URL → '/tasks'
