@@ -32,7 +32,7 @@ Update Task:
               Header → Content-Type : application/json
               Body → 
               { 
-                id : 1 , 
+                "id" : 1 , 
                 "detail" : "Go to Chiang Mai", 
                 "pending" : "true" 
               }
