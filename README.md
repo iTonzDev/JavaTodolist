@@ -1,4 +1,4 @@
-# JavaTodolist
+# JavaTodolistAPI
 [![Build Status](https://travis-ci.org/iTonzDev/JavaTodolist.svg?branch=master)](https://travis-ci.org/iTonzDev/JavaTodolist)
 
 ### Build & Run
